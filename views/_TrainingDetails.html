@@ -1,0 +1,40 @@
+<div>
+	
+	 {{name}} details Page
+	 
+	 <h3>Ongoing Trainings </h3>
+	 <div>
+	 	<ul class='training_list'>
+	 		
+	 		<li ng-repeat='trainings in cTrainings |filter: onGoingCheck'>
+	 			<a ng-click="toggleTrainings(trainings,$event)"  >{{trainings.name}}</a>
+	 			<div class='trainingDetails' ng-hide="isHidden" training-detail></div>
+	 			
+	 		</li>
+	 		
+	 	</ul>
+	 </div>
+	 <h3>Up Coming Trainings </h3>
+	 <div>
+	 	<ul class='training_list'>
+	 			<li ng-repeat='trainings in cTrainings | filter: upComingCheck'>
+	 			<a ng-click="toggleTrainings(trainings,$event)"  >{{trainings.name}}</a>
+	 			 <div class='trainingDetails' ng-hide="isHidden" training-detail></div>
+	 			
+	 		</li>
+	 	</ul>
+	 </div>
+	 <h3>Archives </h3>
+	 <div>
+	 	<ul class='training_list'>
+	 			<li ng-repeat='trainings in cTrainings | filter:archiveCheck'>
+	 			<a ng-click="toggleTrainings(trainings,$event)"  >{{trainings.name}}</a>
+	 			 <div class='trainingDetails' ng-hide="isHidden" training-detail></div>
+	 			
+	 		</li>
+	 	</ul>
+	 </div>
+	
+	 <button ng-click="openModal()" class="btn btn-primary" data-toggle="modal" data-target="#{{id}}">Request Training</button>
+	 <div ng-hide="isHidden" req-training  info="id" ></div>
+</div>

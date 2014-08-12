@@ -1,0 +1,28 @@
+
+
+<div class="trainingDetContainer" id="myModal" tabindex="-1" >
+  
+    <div class="training-content">
+     
+      <div class="modal-body">
+       	 <p><span>Start Date :</span>  {{trainings.dateFrom}}</p> 
+       	 <p><span>End Date : </span> {{trainings.dateTo}}</p>
+       	 <p><span>No of hours : </span> {{trainings.No_Of_hours}}</p>
+       	 <p><span>Location : </span> {{trainings.location}}</p>
+       	 <p><span>Type of Training : </span>{{trainings.typeOfTraining}} </p>
+       	 <p><span>Contact Person : </span> {{trainings.contact}}</p>
+       	 <p><span>Registration Link : </span> <a href='{{trainings.registrationLink}}'>{{trainings.registrationLink}}</a></p>  
+      </div>
+      <div class="modal-footer">
+      	<div class='adminButtons'>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	        <button type="button" class="btn btn-primary">Edit training</button>
+        </div>
+        <div class="userButtons">
+        	<button type="button" class="btn btn-primary">Enroll</button>
+        </div>
+      </div>
+    </div>
+ 
+</div>

@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	width: 64%;
+	margin: 15px auto;
+	background: #fff;
+	font-size:16px;
+	font-family:Verdana;
+}
+.main_container a{
+	color:#29BB41;
+	text-decoration:none;	
+}
+h1.pageHeader{
+	background: #000;
+	color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+}
+.home_description{
+	margin:10px 5px;
+}
+.panel-heading{
+	padding:0;
+}
+.panel-heading a{
+	display: block;
+	text-decoration: none;
+	padding: 10px 15px;
+	color:#000;
+}
+.btn-primary,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary{
+	background-color:#29BB41;
+	border-color:#29BB41;
+	margin-bottom: 10px;
+}
+.view_container{
+	min-height:400px;
+}
+
+.main_navigation ul li{
+	list-style:none;
+	padding:5px;
+}
+.panel-body li,.content{
+	list-style: none;
+	font-size:14px;
+	margin:10px;
+}
+.modal-header{
+	background: #000;
+	color: #fff;
+}
+.modal-header h4.modal-title{
+	font-size: 22px;
+}
+.close,.close:hover, .close:focus{
+	color:#fff;
+	opacity: 0.8;
+}
+/*overridden*/ 
+.form-horizontal .radio, .form-horizontal .checkbox{
+	margin-left:20px;
+}
+.form-control{
+	width:80%;
+	margin-left:19px;
+}
+.form-horizontal .control-label{
+	font-weight: normal;
+}
+
+.training_list li{
+	list-style: none;
+	padding:3px;
+	
+}
+.training_list{min-height: 200px;	}
+.training_list li>	a{
+	color:#000;
+	display:block;
+	background-color:#F0F0F0;
+	cursor: pointer;
+	padding:10px;
+	border-radius:5px;
+}
+
+.trainingDetails{
+	display:none;
+	
+}
+.training-content{
+	z-index: 1;
+	box-shadow: none;
+	border-radius: 0 0px 3px 3px;
+	border: 1px solid #E7DEDE;
+	margin: 0 5px 5px;
+	border-top: none;
+}
+.adminButtons{
+	display:none;
+}
+.modal-body span{
+	font-weight:bold;
+	
+}
+.panel-group{
+	min-height: 400px;
+}
+/*ngAnimate Code*/
+	.reveal-animation.ng-enter {
+		 -webkit-transition: 1s linear all; /* Safari/Chrome */
+		 transition: 1s linear all; /* All other modern browsers and IE10+ */
+		 
+		 /* The animation preparation code */
+		 opacity: 0;
+		}
+ 
+/*
+ Keep in mind that you want to combine both CSS
+ classes together to avoid any CSS-specificity
+ conflicts
+*/
+.reveal-animation.ng-enter.ng-enter-active {
+ /* The animation code itself */
+ opacity: 1;
+}
+ 
+/*Footer CSS*/
+footer{
+	background: #000;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	border-top:5px solid #29BB41;
+}
